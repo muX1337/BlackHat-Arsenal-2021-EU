@@ -272,13 +272,10 @@ https://github.com/cyberark/kubesploit
 </details>
 
 <details>
-  <summary>CrowdSec: The Open-Source & Participative IPS
-    
+  <summary>CrowdSec: The Open-Source & Participative IPS</summary>    
 Discover CrowdSec, the open-source & participative IPS, relying on both IP behavior analysis and IP reputation. CrowdSec analyzes visitor behavior & provides an adapted response to all kinds of attacks. The solution also enables users to protect each other. Each time an IP is blocked, all community members are informed so they can also block it. Already used in 105+ countries across 6 continents, the solution builds a real-time IP reputation database that will benefit individuals, companies, institutions etc.
     
  https://github.com/crowdsecurity/crowdsec
-</summary>
-  
 </details>
 
 <details>
@@ -413,13 +410,6 @@ Utilising elastic backend storage provides rich data filtering and analysis, wit
 https://github.com/punk-security/SMBeagle
 
 </details>
-
-<details>
-  <summary></summary>
-  
-</details>
-
-
 
 ## Webinars/Sessions/Talks
 
