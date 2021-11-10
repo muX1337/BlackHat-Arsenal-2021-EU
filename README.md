@@ -262,9 +262,163 @@ https://github.com/zeronetworks/rpcfirewall
 </details>
 
 <details>
+  <summary>Kubesploit: A Post-Exploitation Framework, Focused on Containerized Environments
+</summary>
+  
+Kubesploit is a post-exploitation HTTP/2 Command & Control server and agent written in Golang, focused on containerized environments, and built on top of Merlin project by Russel Van Tuyl (@Ne0nd0g).
+It supports Go modules and has container breakout modules, kubelet attack, and scanning modules.
+  
+https://github.com/cyberark/kubesploit
+</details>
+
+<details>
+  <summary>CrowdSec: The Open-Source & Participative IPS
+    
+Discover CrowdSec, the open-source & participative IPS, relying on both IP behavior analysis and IP reputation. CrowdSec analyzes visitor behavior & provides an adapted response to all kinds of attacks. The solution also enables users to protect each other. Each time an IP is blocked, all community members are informed so they can also block it. Already used in 105+ countries across 6 continents, the solution builds a real-time IP reputation database that will benefit individuals, companies, institutions etc.
+    
+ https://github.com/crowdsecurity/crowdsec
+</summary>
+  
+</details>
+
+<details>
+  <summary>RedHerd Framework</summary>
+  
+RedHerd is a collaborative serverless framework for orchestrating a geographically distributed set of assets in order to simulate/conduct complex offensive cyberspace operations. The design and implementation of RedHerd perfectly fit the Open Systems Architecture design pattern, thanks to the adoption of both open standards and wide-spread open source software components.
+
+The framework allows to seamlessly deploy a ready-to-use infrastructure that can be adopted for effective conduct, simulation and training purposes, by reliably joining a real-world cyberspace battlefield in which red and blue teams challenge each other to reach their goals. These elements lead to the Offensive Cyberspace Operations as a Service (OCOaaS) paradigm, which involves a complete software solution, locally set up, remotely deployed or Cloud-based, offering a layer of abstraction placed in front of the operative infrastructure and tools.
+
+In this way, the operational actors have the opportunity to focus on the task execution, while ignoring all of the collateral activities. In addition, OCOaaS provides a flexible and quickly deployable solution to reduce costs. The RedHerd framework is a practical implementation of this model empowering the approach with strong orchestration capabilities and other additional features.
+  
+https://github.com/redherd-project/redherd-framework  
+</details>
+
+<details>
+  <summary>pwnSpoof</summary>
+  
+PWNSpoof produces realistic but unique incident response logs, with plenty of customisation options and an injected attack sequence to boot. Each user session (and we produce thousands over a customisable period of time) follows a dynamic pattern, which prevents simple filtering and delivers an authentic dataset. Currently pwnSpoof generates IIS logs for dummy banking and social media applications in the standard IIS log format (W3SVC) which can be consumed by most SIEM solutions. It injects a configurable number of attacks, including login bruteforce and parameter injection.
+
+pwnSpoof randomises session times to produce a realistic pattern of activity that idles overnight and peaks during business hours. It randomises source IPs according to a weighted geo table, providing realistic iplocation patterns such as 99% UK and 1% EU. This allows us to set attacker source IPs to countries of hacking notoriety or allow it to blend in.
+
+pwnSpoof is able to generate unique log bundles every time so is perfect for incident response and threat hunting training serials. The student then has to find the attack amongst the high entropy background noise in order to find the indicators of compromise and comprehend the attackers activity. Typically a student will need to identify which account was compromised, the timestamp of a log or the source IP of the attacker. pwnSpoof produces a seperate answer file, which can be used directly by the student or ingested by CTF tool for points based scoring.
+
+There's no benefit to cheating, as every student has a different challenge.
+  
+https://github.com/punk-security/pwnspoof  
+</details>
+
+
+<details>
+  <summary>KICS: Keeping Infrastructure-as-Code Secure</summary>
+  
+Infrastructure as Code (IaC) makes deploying cloud or container configurations scalable and faster. If you are launching a microservice into a Kubernetes cluster, or even building an entire AWS virtual infrastructure, IaC can automate the deployment. By building repeatable templates you can also ensure that deployments happen exactly as you design, every time.
+
+However, errors in infrastructure configuration are now regarded as the second biggest cause of data breaches. There are many ways to give adversaries an advantage through security misconfigurations. Overly permissive storage volumes, unauthenticated database access, or ports left open to the internet have all been a cause of compromise. The solution? Treat your infrastructure code the same as your application code. During your build process, use tools to scan for infrastructure misconfigurations. When you find them raise alerts or even break the build. 
+
+In this session, we will discuss common types of IaC misconfigurations, and demonstrate a free, open source security tool that developers can build into their pipelines to help protect infrastructure from compromise.
+  
+https://github.com/Checkmarx/kics  
+</details>
+
+<details>
+  <summary>An Open Stack for Threat Hunting in Hybrid Cloud With Connected Observability
+</summary>
+  
+We present a cloud-native threat hunting architecture built on open-source technologies. The security architecture integrates SysFlow and Kestrel to provide connected endpoint observability, edge analytics, and a cyber-reasoning stack that enables threat hunters to quickly and uniformly perform threat hunting and investigation across cloud and premise environments. This facilitates a new threat discovery methodology in which declarative hunting flows automate the search for behavioral attack patterns and indicators of compromise in telemetry data streams that are automatically tagged with attack TTPs. We show how these two open-source frameworks can deploy and scale natively on cloud environments to discover attacks and security breaches against cloud services and container infrastructures.
+
+SysFlow is an open observability framework that lifts and normalizes the representation of system activities into a compact entity-relational format that records workload behaviors by connecting single-event and volumetric flow representations of process control flows, file interactions, and network communications. It drastically reduces data footprints over existing approaches and is particularly suitable for large scale cloud-wide monitoring and forensic investigation of sophisticated cyber-attacks that may not be discovered for long periods of time.
+
+Kestrel is a threat hunting language for creating composable, reusable, and shareable hunt flows. It brings two key innovations to the security community: (i) a composable way of expressing hunting knowledge for threat hypothesis development and reasoning over entity-relational data abstractions, and (ii) an open-source language runtime to compute how to perform hunting steps and execute them in a distributed fashion at the local hunting site, remote data sources, and in the cloud.
+
+We will demonstrate through live threat hunting scenarios how the two open-source projects can help create a powerful open platform for gaining operational awareness and alleviating key pain points in integrating security solutions into a "single-pane-of-glass" for effective and shareable threat hunting in the cloud.
+
+https://github.com/opencybersecurityalliance/kestrel-lang
+</details>
+
+<details>
+  <summary>Xsstools: The XSS Exploitation Framework</summary>
+  
+  XSS is one of the most common bug found on web application but the impact is often underestimated, and I think we can blame POC doing only an alert for that.While proving arbitrary code execution seems enough for bug hunters, people with less security knowledge may fail to grasp all the thing we can do with a bit of JavaScript.
+It's our job to explain and prove the impact but writing custom payload for every scope can be tiresome, because a XSS can trigger it a lot of different context reusing the same attack is often impossible.
+
+Xsstools is a new exploitation framework from bug bounty hunter and red teamer. It will help you build powerful and reusable payload that can be "compiled" to work in every situation.
+
+The framework come with all the common goodies you might need:
+- form submission with csrf token
+- data exfiltration via multiple channels
+- click and keylogger
+- DOM manipulation
+- Clickjacking helpers
+- and much more
+
+New features will be released for Black Hat armory:
+- cache only spidering
+- persistent exploitation
+
+This tool is available on GitHub https://github.com/yeswehack/xsstools under GPL-3.0 License. 
+</details>
+
+<details>
+  <summary>SMERSH</summary>
+
+It's a collaborative open source tool to manage pentest campaigns.
+You can install it via Docker ( it includes an Angular front end with a symfony API )
+There is also a python client for the bearded ones.
+The graphical interface allows you to add your scope and vulnerabilities and exchange information with your hacker partners in a Quick and easy way (also possible to generate report).
+
+https://github.com/CMEPW/Smersh
+  
+</details>
+
+<details>
+  <summary>iKy – OSINT TOOL</summary>
+  
+iKy is an Open Source project. From an e-mail or other selectors (username, twitter, instagram, etc) it tries to collect data to later convert them into visual information
+OSINT tools are many and varied. But with iKY it was sought, apart from a good performance, an attractive graphic visual supported by the fact that neuroscientifically the brain interprets images better and faster than numbers and letters
+
+https://github.com/kennbroorg/iKy
+</details>
+
+<details>
+  <summary>Git Wild Hunt: A Tool for Hunting Leaked Credentials
+</summary>
+  
+Git Wild Hunt is a tool designed to search and identify leaked credentials at public repositories such as Github. Git Wild Hunt searches for footprints and patterns of over 38 of the most used secrets/credentials on the internet, especially those used in Devops and IT Operations. This tool helps developers and security operation departments discover leaked credentials in public repositories. This tool is also a recon tool for red teamers and pentesters, as it also provides metadata from leaks such as usernames, company names, secret types, and dates.
+
+https://github.com/d1vious/git-wild-hunt
+</details>
+
+<details>
+  <summary>Cluster Fuzz, Introduction to Car Hacking With Real Car Hardware</summary>
+  
+Join us for hands-on interaction with the PD0 'Car in a box' -- a fully working test platform for automotive security including most of the ECUs from a 2014 Peugeot 208. Attendees will receive a quick introduction to CAN bus networks, how they are insecure by default, and how this can be exploited to change data and displays. All laptops will be equipped with a nano-can adapter and an instrument cluster which will have some scripts to allow fuzzing of the clusters. As a bonus, we will be using Twitter to control some of the dials on PD0 by tweeting specific information.
+  
+https://github.com/mintynet/car-in-a-box
+  
+</details>
+
+<details>
+  <summary>SMBeagle: SMB Share Hunter</summary>
+  
+SMBeagle is executed on end-user devices with a standard domain users account.  SMBeagle will then identify all connected networks using existing mapped drives, application connections, local networks and subnet masks.  SMBeagle will then scan all identified network ranges for open SMB shares.  Once it finds an SMB connection it will audit the file and folder structure and record the applied permissions.
+
+This information is logged in an elastic index to be dashboarded within Kibana.  Giving application owners and IT operation teams greater insight into what network shares are available to users and highlight insecure network shares which are susceptible to RANSOMWARE attacks.
+
+SMBeagle can be run multiple times from multiple user contexts to identify the business risk to RANSOMWARE.
+
+SMBeagle can be used during a pentest engagement to identify business-sensitive data and system credentials in configuration files and scripts. We believe SMBeagle will become a defacto tool for all stages of pentesting, allowing low privilege windows domain accounts to find vector for privilege escalation and allowing privileged accounts to quickly identify collections of sensitive business data.
+
+Utilising elastic backend storage provides rich data filtering and analysis, with auto documentation.
+  
+https://github.com/punk-security/SMBeagle
+
+</details>
+
+<details>
   <summary></summary>
   
 </details>
+
 
 
 ## Webinars/Sessions/Talks
@@ -490,9 +644,115 @@ https://www.youtube.com/watch?v=7EUXAhO_QDo
 
 
 <details>
-  <summary> </summary>
+  <summary>Cybersecurity Policies 2021: SDLC and Cyber Systems Security, and What Can You Do
+</summary>
+  
+2021 holds a special place in infosec land when it comes to novel cyber attacks — from ransomware supply-chain incidents like Kaseya’s, where threat actors demanded a $70 million ransom, to $600 million heists against cryptocurrency exchanges, stemming from exploits or rogue insiders, to next-generation attacks like the Codecov incident and threats to open-source ecosystems.
+
+Join this session to learn about the latest developments in the areas of cybersecurity laws and policy that governments around the world—US, UK, EU, are introducing, and what your organization can do—with a special focus on SBOMs and software supply-chain security.
+</details>
+
+
+<details>
+  <summary>SOC in the Spotlight, See What’s Possible With Google Cloud Chronicle
+</summary>
+  
+Google Cloud is taking a radically different approach to solving the modern security challenges of the SOC. Our decades of experience pioneering differentiated approaches to security inform our most powerful security offerings like Chronicle.
+
+Learn how you can leverage a new solution-driven approach to transform your SOC and hear lessons learned from our customers like BBVA and Viacom/CBS who are implementing Chronicle and our security models in complex environments.  
+</details>
+
+<details>
+  <summary>Operation Rainbow Safari: A North Korean Supply Chain Attack</summary>
+North Korea conducted multiple operations against entities involved in COVID-19 related research and policy development throughout 2020.
+NICKEL ACADEMY (aka Lazarus, Labyrinth Chollima, Zinc) and NICKEL KIMBALL (Kimsuky) were both publicly reported to be conducting COVID-related campaigns. One group that didn’t make the headlines was NICKEL HYATT (aka Stonefly, Silent Chollima, Andariel). This presentation will walk through a network intrusion at a life sciences company that Secureworks assisted , highlighting adversary tradecraft and exploring defender options for detections and response.
+</details>
+
+<details>
+  <summary>Exposed: Keeping Your Organization's Sensitive Data Safe from Careless End Users</summary>
+
+While data security is at the forefront for many IT and security teams, for most employees, security is an afterthought. They just want to access the data they need, when they need it, to do their jobs. And if security practices feel too cumbersome or complicated, they’ll find workarounds—or worse, skip security altogether. This creates dangerous vulnerabilities, especially in today’s hybrid office/remote environment. Organizations must find the balance between data security and usability so end users don’t bypass important practices.
+Join PKWARE’s Arif Khan as he discusses the challenges of data security versus usability and finding the right balance.
+  
+  https://www.grcworldforums.com/on-demand-content/exposed-keeping-your-organizations-sensitive-data-safe-from-careless-end-users/2813.article
+</details>
+
+<details>
+  <summary>The Funny Story of Active Directory Backdooring</summary>
+  
+Security practitioners know that Active Directory (AD) is the top target for privilege escalation and lateral movement during an attack, but did you know that AD is an inexhaustible reservoir for creating backdoors? During this session, we will explain how AD can be hijacked to create backdoors that can be used for future infections. We will also discuss how to spot them, as well as remediations to clean up AD following an APT or ransomware attack.
+  
 
 </details>
+
+<details>
+  <summary>Ransomware: The New Terrorism</summary>
+  
+While encryption serves as a fundamental element of data security, when it is used by an adversary to deny organizations access to their own data, the consequences can be devastating. Recent security incidents directed at critical infrastructure have resulted in the United States DOJ and FBI elevating the severity of ransomware to considered on par with terrorism. Ransomware gangs, with ties to criminal organizations worldwide, have been tied to some of the most destructive attacks in recent years. Omdia will outline some of the challenges that organizations face in their ability to prepare for and respond to ransomware attacks and highlight best data security practices to help mitigate the hurdles of this evolving threat.
+  
+https://omdia.tech.informa.com/OM019416/Ransomware-The-new-terrorism
+
+</details>
+
+
+<details>
+  <summary>Rebuilding the SecOps Stack – Secops Priorities & Technologies for 2021 and Beyond</summary>
+  
+Enterprise cybersecurity operations (SecOps) technology architectures have remained surprisingly static over the past decade. Today, a confluence of long-awaited technology advancements and unexpected global events are ushering in a new generation of SOC capabilities, and with them dramatic ramifications. This presentation will not only examine how industry changes are affecting SecOps business and technical priorities but also how solutions are evolving to realign and even remake the SOC technology stack.  Specific areas of focus will include:
+
+    Omdia's view of enterprise SOC technology priorities, based on exclusive survey results
+    Detailing how Next-Generation SIEM solutions will drive enterprise threat detection & response evolution
+    Understanding the emerging XDR technology landscape, and the implications for traditional SIEM-based SOC architectures
+
+https://vimeo.com/578500429
+</details>
+
+<details>
+  <summary>Navigating Enterprise Security in a Post-Compromise Reality</summary>
+  
+Every organisation gets compromised - it’s how fast you detect and respond to an incident that counts. This is especially important when you look at trends like the overnight move to remote work, the rise in encrypted traffic and acceleration of cloud adoption, as well as the proliferation of enterprise IoT that have expanded the attack surface and complicated the job of security professionals. We’ll explore those trends and the opportunity that lay ahead for security teams post-compromise to prevent an event that results in an outage or an incident from becoming a full-scale data breach.
+</details>
+
+
+<details>
+  <summary>Managing Risk in an Ever Moving As-A-Service Environment</summary>
+  
+In the infrastructure and platform-as-a-service worlds, application developers are the new infrastructure superstars. With concepts ranging from containers to infrastructure-as-code, we are experiencing a paradigm shift in how tightly coupled application code and related infrastructure are but often security is under-represented in this equation. Join Orca Security for a discussion around how to understand new security conventions and controls of the as-a-service era, and how to achieve visibility and governance of these controls within application infrastructure that never sleeps.
+
+https://youtu.be/ROwzDkz3AB4
+</details>
+
+<details>
+  <summary>Managing Risk in an Ever Moving As-A-Service Environment</summary>
+  
+In the infrastructure and platform-as-a-service worlds, application developers are the new infrastructure superstars. With concepts ranging from containers to infrastructure-as-code, we are experiencing a paradigm shift in how tightly coupled application code and related infrastructure are but often security is under-represented in this equation. Join Orca Security for a discussion around how to understand new security conventions and controls of the as-a-service era, and how to achieve visibility and governance of these controls within application infrastructure that never sleeps.
+
+https://youtu.be/ROwzDkz3AB4
+</details>
+
+<details>
+  <summary>Ransomware: Navigating the New 'Normal'</summary>
+  
+It's the same story, different victim, over and over: a hospital, school system, or business (think Colonial Pipeline) gets hit with a ransomware attack that locks down their servers, their operations, and in the case of healthcare organizations, places their patients at physical risk. Even with increased awareness, known best practices, and now, the governments like the US putting the squeeze on attackers and their cryptocurrency cover, there's still no real end in sight to ransomware.
+
+A panel of security experts will discuss and debate why ransomware attacks are so easy to pull off, why they're so hard to stop - and what organizations need to do to double down on their defenses against one of these debilitating cyberattacks.
+</details>
+
+<details>
+  <summary>Embedding a Human-Centric Approach Into a Global Cyber Security Program</summary>
+  
+Humans are the weakest link in cyber security – or so the famous saying goes! This talk will challenge this age old expression to focus on the human elements of the protection pillars; people, process, and technology.
+
+Organisations have an overwhelming focus on technology in cyber security defences including offensive red-team operations to highlight weaknesses. Yet the numbers of successful attacks are still increasing; both in frequency and impact.
+
+It is time that as an industry we start to think differently about our approach; considering the human-centric notions as part of our technological advances, throughout our entire ecosystem and security lifecycle. The aviation sector is a pioneer of this technique; so how is this thinking being adopted in the cyber security program of Airbus?
+
+</details>
+
+
+
+
+
 
 
 
