@@ -557,6 +557,8 @@ https://github.com/Q8OSINT/Q8OSINT
   <summary>HazProne</summary>
   
 HazProne is a Cloud Pentesting Framework that emulates close to Real-World Scenarios by deploying Vulnerable-By-Demand aws resources enabling you to pentest Vulnerabilities within, and hence, gain a better understanding of what could go wrong and why!!
+  
+https://github.com/stafordtituss/HazProne
 </details>
 
 <details>
