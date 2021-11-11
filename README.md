@@ -234,7 +234,16 @@ In0ri the first source machine learning project to detect defacement attacks, we
 <details>
   <summary>CQPenetrationTesting Toolkit: Powerful Toolset That All Pentesters Want to Have
 </summary>
-  CQ Penetration Testing Toolkit supports you in performing complex penetration tests as well as shows the ways to use them, and the situations in which they apply. It guides you through the process of gathering intel about network, workstations, and servers. Common technics for antimalware avoidance and bypass, lateral movement, and credential harvesting. The toolkit allows also for decrypting RSA keys and EFS protected files as well as blobs and objects protected by DPAPI and DPAPI-NG. This powerful toolkit is useful for those who are interested in penetration testing and professionals engaged in pen-testing working in the areas of database, system, network, or application administration. Among published presented tools are CQARPSpoofer, CQCat, CQDPAPIBlobDecrypter, CQMasterKeyDecrypt, CQReverseShellGen, and many more.
+CQ Penetration Testing Toolkit supports you in performing complex penetration tests as well as shows the ways to use them, and the situations in which they apply. It guides you through the process of gathering intel about network, workstations, and servers. Common technics for antimalware avoidance and bypass, lateral movement, and credential harvesting. The toolkit allows also for decrypting RSA keys and EFS protected files as well as blobs and objects protected by DPAPI and DPAPI-NG. This powerful toolkit is useful for those who are interested in penetration testing and professionals engaged in pen-testing working in the areas of database, system, network, or application administration. Among published presented tools are CQARPSpoofer, CQCat, CQDPAPIBlobDecrypter, CQMasterKeyDecrypt, CQReverseShellGen, and many more.
+
+https://github.com/BlackDiverX/cqtools
+  
+</details>
+
+<details>
+  <summary>CQPrivilegeExcalation Toolkit: Effective Tools for Windows Privilege Escalation Gamers
+</summary>
+CQURE PE Toolkit is focused on Windows Privilege Escalation tactics and techniques created to help improve every privilege escalation game. This toolkit guides you through the process of exploiting a bug or design flaw in an operating system or software to gain elevated privileges to resources that are normally highly protected. Once you will know what to look for and what to ignore, Privilege Escalation will be so much easier. This powerful toolkit is useful for those who are interested in penetration testing and professionals engaged in pen-testing working in the areas of database, system, network, or application administration. Among published presented tools are CQSecretsDumper, CQNTDSDTDecrypter, CQLsassSecretsDumper, CQCreateProcessWithParent, and many more.
 
 https://github.com/BlackDiverX/cqtools
   
@@ -414,7 +423,265 @@ https://github.com/punk-security/SMBeagle
 
 </details>
 
-## Webinars/Sessions/Talks
+<details>
+  <summary>LazyCSRF: A More Useful CSRF PoC Generator on BurpSuite</summary>
+  
+Burp Suite is an intercepting HTTP Proxy, and it is the defacto tool for performing web application security testing. The feature of Burp Suite that I like the most is `Generate CSRF PoC`. However, the function to automatically determine the content of the request is broken, and it tries to generate PoCs using `form` even for PoCs that cannot be represented by `form`, such as JSON parameters and PUT requests. In addition, multibyte characters that can be displayed in Burp Suite itself are often garbled in the generated CSRF PoC. These were the motivations for creating LazyCSRF.
+I have implemented a feature to solve them. It has the following features:- Automatically switch to PoC using XMLHttpRequest - In case the parameter is JSON - In case the request is a PUT/PATCH/DELETE- Support displaying multibyte characters (like Japanese)- Generating CSRF PoC with Burp Suite Community Edition (of course, it also works in Professional Edition)
+https://github.com/tkmru/lazyCSRF
+
+</details>
+
+<details>
+  <summary>LazyCSRF: A More Useful CSRF PoC Generator on BurpSuite</summary>
+  
+Burp Suite is an intercepting HTTP Proxy, and it is the defacto tool for performing web application security testing. The feature of Burp Suite that I like the most is `Generate CSRF PoC`. However, the function to automatically determine the content of the request is broken, and it tries to generate PoCs using `form` even for PoCs that cannot be represented by `form`, such as JSON parameters and PUT requests. In addition, multibyte characters that can be displayed in Burp Suite itself are often garbled in the generated CSRF PoC. These were the motivations for creating LazyCSRF.
+I have implemented a feature to solve them. It has the following features:- Automatically switch to PoC using XMLHttpRequest - In case the parameter is JSON - In case the request is a PUT/PATCH/DELETE- Support displaying multibyte characters (like Japanese)- Generating CSRF PoC with Burp Suite Community Edition (of course, it also works in Professional Edition)
+https://github.com/tkmru/lazyCSRF
+  
+Slides:
+https://speakerdeck.com/tkmru/lazycsrf-bh2021-europe
+</details>
+
+<details>
+  <summary>LaiFu: A Modern Protocol Fuzzing Framework Based on Scapy</summary>
+  
+As a protocol tester, we often use scapy to interact with the protocol because it is able to craft or decode packets easily and it implements a wide number of protocols. However, the fuzz function supported by scapy can not fuzz protocols sufficiently and effectively. Testers often need to write additional fuzzing code based on other fuzzing frameworks such as Peach and Boofuzz.
+
+According to the current situation, we design a protocol fuzzing tool named "LaiFu". LaiFu framework allows testers to use scapy to specify protocol formats directly. We designed the corresponding mutation algorithm according to the various field types of scapy's packet. Meanwhile, we also provide a tool to show the coverage of fuzzing target in real time. Testers only need to put each data packet as a node into the graph and then start the fuzzing test. Another advantage is that LaiFu makes many protocols already implemented by scapy to be fuzzable.
+
+We are going to open source this tool to assist testers or developers to test their code and make protocol fuzzing easy and effective.
+  
+  !!!Information at the presentation 11.11.2021!!!
+"Our company has some approval process, after completing it, we can open source LaiFu"
+</details>
+
+<details>
+  <summary>aDLL: adventure Dynamic Link Library</summary>
+  
+Adventure of Dynamic Link Library (aDLL) is a console tool for the analysis of binaries and focused on the automatic detection of possible DLL Hijacking cases in Windows systems. The purpose of the tool is to analyse every DLL that an executable will load in memory, anticipating the Windows DLL search order and identifying those DLLs that are missing from the expected directory. That may lead in the replacement of the legitimate DLL by a malicious one if the directory has misconfigured permissions.
+  
+https://github.com/ideaslocas/aDLL
+
+</details>
+
+<details>
+  <summary>Scanning DNA to Detect Malicious Packages in Your Code</summary>
+  
+PackageDNA is an open-source tool, free and modular tool developed in Python3, that offers developers and researchers the ability to analyze code packages from different programming languages, in search of vulnerabilities in the code, the possible manipulations or spoofing of the package ('typosquatting'), identifying suspicious files, searching for strings in the code, among other data for analysis.
+
+PackageDNA, enables threat intelligence analysis or code audits, which allow to detect attacks to the software supply chain, the vast majority of companies integrate third-party code in their developments, thus the need to have a suite such as PackageDNA that performs the analysis of all these external codes and delivers the results of the analysis in a standardized way.
+  
+https://github.com/Telefonica/packagedna
+
+</details>
+
+
+<details>
+  <summary>Scanning DNA to Detect Malicious Packages in Your Code</summary>
+  
+PackageDNA is an open-source tool, free and modular tool developed in Python3, that offers developers and researchers the ability to analyze code packages from different programming languages, in search of vulnerabilities in the code, the possible manipulations or spoofing of the package ('typosquatting'), identifying suspicious files, searching for strings in the code, among other data for analysis.
+
+PackageDNA, enables threat intelligence analysis or code audits, which allow to detect attacks to the software supply chain, the vast majority of companies integrate third-party code in their developments, thus the need to have a suite such as PackageDNA that performs the analysis of all these external codes and delivers the results of the analysis in a standardized way.
+  
+https://github.com/Telefonica/packagedna
+
+</details>
+
+<details>
+  <summary>PyGoat</summary>
+  
+PyGoat -
+Intentionally vuln web Application Security in django. our roadmap build intentionally vuln web Application in django. The Vulnerability can based on OWASP top ten
+• A1:2017-Injection
+• A2:2017-Broken Authentication
+• A3:2017-Sensitive Data Exposure
+• A4:2017-XML External Entities (XXE)
+• A5:2017-Broken Access Control
+• A6:2017-Security Misconfiguration
+• A7:2017-Cross-Site Scripting (XSS)
+• A8:2017-Insecure Deserialization
+• A9:2017-Using Components with Known Vulnerabilities
+• A10:2017-Insufficient Logging & Monitoring
+
+https://github.com/adeyosemanputra/pygoat
+
+</details>
+
+
+<details>
+  <summary>IDA2Obj: An Innovative Tool for Static Binary Instrumentation</summary>
+  
+As well known, object files are generated by c/c++ compiler or assembler from source code, and linked into an executable binary. But now, I can directly dump multiple object files just from one executable binary (exe, dll, ...) by using this tool. What's more amazing is that they can be linked again to a new binary, which is almost same as the old one !
+
+It is designed mainly for SBI (Static Binary Instrumenation), to collect code coverage and integrate with popular fuzzing engines (AFL, honggfuzz, ...). Of course, it is faster than all of the DBI solutions.
+
+https://github.com/jhftss/IDA2Obj
+</details>
+
+<details>
+  <summary>AttackForge: Pentest Management Platform</summary>
+  
+AttackForge.com is Community Pentest Management Platform that supports workflows for pentesting & collaboration between engineering & security teams.
+
+AttackForge.com equips pentesters with the following:
+
+- Dedicated workspace for penetration testing projects. You can invite other pentesters or engineers to your workspace and assign their roles. You can store all information/entry criteria/logs/etc.
+- Assign methodologies/checklists to each project. AttackForge includes pre-built methodologies for convenience.
+- Professional automated reporting. Fully customizable report templates using AttackForge ReportGen tool. AttackForge includes a styled base template to get started fast or you can use your own templates.
+- Vulnerability library pre-loaded with 1300+ vulnerabilities. You can add your own.
+- Import vulnerabilities from tools such as Nessus, BURP, Qualys, Netsparker, Acunetix, Nexpose, OpenVAS, ZAP. RESTful API for custom imports & generic CSV importer.
+- Build AttackChains and map to MITRE ATT&CK Framework.
+- Project management support including calendar, daily tracking, retesting tracking, and others.
+- Integration with DevOps tools like JIRA & ServiceNow.
+- Custom themes including "The Matrix" for the full Hacker experience
+
+Come check out the new features we have not yet presented to public!
+  
+  https://www.attackforge.com/
+</details>
+
+<details>
+  <summary>RAT Exploitation Tool for Social Networks</summary>
+  
+As we all know, many risks are involved with social networks such as impersonation, social-engineering, and data breach.
+
+To demonstrate these attacks, we developed an innovative tool that can hijack and remotely control social network accounts by combining the powers of social engineering with malicious third party apps.
+
+We built a private app store of phishing apps, with genres, that a bad actor can choose from to gain RAT control over victim accounts. To enable this, our tool manages oauth tokens within a single web console, allowing the hacker to exercise the functions of the victim accounts. To this end, we discuss other features and extensions of our tool, such as social engineering chat bots, crawlier bots, password crackers, and visualization tools for social network analytics.
+
+https://github.com/Q8OSINT/Q8OSINT
+</details>
+
+<details>
+  <summary>HazProne</summary>
+  
+HazProne is a Cloud Pentesting Framework that emulates close to Real-World Scenarios by deploying Vulnerable-By-Demand aws resources enabling you to pentest Vulnerabilities within, and hence, gain a better understanding of what could go wrong and why!!
+</details>
+
+<details>
+  <summary>DejaVu ++</summary>
+  
+DejaVu is an open source deception framework which can be used to deploy decoys across the infrastructure. This could be used by the defender to deploy multiple interactive (Server and Client) decoys strategically across the network and cloud.
+
+We have done massive updates to our platform (now DejaVu ++) and are excited to present these at Blackhat Europe. Some key updates:
+
+1. Decentralized architecture to support enterprise orgs
+2. Video recording of attacker's movement, record attacker's activity
+3. Highly interactive decoys to engage the attacker and reveal attacker motivation and TTP
+4. Integrated IDS for enriched alerts
+5. Full packet capture of attacker's interaction with the decoy for forensic analysis.
+6. Cloud Ready decoys
+- Now blue team can deploy DejaVu instance on AWS infra
+- Configure decoy personality to mimic the environment
+- AWS breadcrumbs
+7. Dashboard with monitoring and analysis - Full lifecycle of event can be drilled into by an analyst
+8. New decoys
+- Email and client side decoys to detect Spear Phishing
+- RDP Interactive and Non-Interactive
+- Interactive SSH
+- Detect MITM attacks : ARP Poisoning, Responder, SSDP
+- HONEYCOMB (To capture events from Honey Docs)
+- Beaconing Documents
+- ICS/SCADA Decoys - Modbus and S7COMM
+9. Personalized threat inteligiance - Deploy customised decoys on DMZ to detect targeted threats
+10. Logging Capability - Ship logs to SIEM or other platforms using Syslog capability
+  
+https://github.com/bhdresh/Dejavu  
+</details>
+
+<details>
+  <summary>Nebula: A Case Study in Penetrating Something as Soft as a Cloud</summary>
+  
+Nebula is a cloud C2 Framework, which at the moment offers reconnaissance, enumeration, exploitation, post exploitation on AWS, but still working to allow testing other Cloud Providers and DevOps Components.
+It started as a project to unify all Cloud + DevOps Pentest and Security Techniques for a better assessment of the Infrastructures. It is build with modules for each provider and each functionality. As of April 2021, it only covers AWS, but is currently an ongoing project and hopefully will continue to grow to test GCP, Azure, Kubernetes, Docker, or automation engines like Ansible, Terraform, Chef, etc.
+
+https://github.com/gl4ssesbo1/Nebula
+</details>
+
+<details>
+  <summary>Damn Vulnerable Bank</summary>
+  
+With over 2.5 billion devices and millions of apps, Android is ruling the market. Developers had additional responsibility to protect the information and integrity of their users. Considering these high numbers, preventive measures should be taken to secure Android applications used by people across the globe.
+
+We built an open-source vulnerable Banking application, a clone close to real-world banking applications. The existing vulnerable applications cover only basic OWASP vulnerabilities. Our vulnerable application covers multiple things like Binary analysis, Debugger detection bypasses, Frida analysis, writing custom code to decrypt data, and a lot more along with basic OWASP vulnerabilities. This product will be a one-stop place for android application security enthusiasts.
+
+https://github.com/rewanthtammana/Damn-Vulnerable-Bank
+</details>
+
+<details>
+  <summary>A Privilege Rules-Based Vulnerabilities Scan Tool for Android Apps</summary>
+
+In the development of software, the system is often designed on a good architecture to ensure the security of the system, which reduces the risk of being attacked. However, due to business requirements, some "privilege rules" often exist in some key security protection processes, such as some privilege userid lists, privilege url lists, or special paths, etc. These privilege configurations disrupt the original security process, and pull down the security level, become a new attack surface (intrusion into the original secure system through attack privilege rules). It is more difficult for us to attack the system directly, but it will be easier to attack the system through the vulnerabilities in the privilege rules, and even the vulnerabilities in these privilege rules already exist widely.
+
+Because of the above attack risks, we develope a tool called "privilege rules bug hunter"(PBH) to detect the vulnerability of privilege rules in software. Data flow graph (DFG) and Control flow graph(CFG) enable us to better understand the inherent logic in software. However, there are so many control flows and data flows when identifying the privilege rules. How to distinguish the normal logic and find out the privilege rules accurately is a challenge. We will combine DFG, CFG and taint analysis methods to find out the risk: 1) generate a graph with the help of DFG and CFG , and use graph similarity information to classify. 2) The software is tested dynamically by online data, and the path information of runtime is recorded by hook to help identify the privilege paths of the graph in 1). 3) Collecting the information of privilege rules and looking for common vulnerabilities(such as xss etc) to reache the control of the whole system.
+
+In this talk, we found the risk of privilege rules in a software , which broke the normal flow of software security architecture and introduce new risks. At the same time, based on the software analysis method, a tool is implemented to detect the vulnerability of privilege rules. We use the developed tool in Android Software Security testing, and find many privilege URLs and paths are configured into the software with high permissions. At the same time, there are a large number of n-days in the websites where these URLs exist.
+
+!!!No Link yet!!!
+</details>
+
+<details>
+  <summary>Report Writing Is Half the Battle: Finish Your Report in Less Time and Get Back to Hacking.</summary>
+
+A single place to hold assessment findings, notes, methodologies, tasks, and feedback from your team makes working together simpler and saves time delivering reports. Dradis combines the output of 20+ popular security tools - including Nessus, Qualys, Burp, and Nmap, along with your manual notes to keep all of your findings centralized for one click report generation.
+If you're reviewing scan results manually or putting together reports by hand, digging through emails and chat logs for details from teammates, or copying and pasting findings from old reports instead of having a findings database, do yourself a favor and download Dradis CE so you can get back to hacking.
+
+Started in 2007 to solve the frustrations associated with creating reports, Dradis Framework has an established track record and a full time, international team working every day so you can ditch the overhead of a traditional security assessment workflow.
+
+https://dradisframework.com/
+  
+CommunityEdition:
+Dradis is an open-source reporting and collaboration tool trusted by 1,000s of InfoSec professionals around the world.
+https://dradisframework.com/ce/
+</details>
+
+<details>
+  <summary>on the fly</summary>
+
+The 'on-the-fly' tool intends to give the pentester an 'all-in-one' tool by deploying different functionalities applicable across the three domains of work: IoT, ICS & IT. The present work introduces a new framework in which enough functionalities will be provided to discover, evaluate, and audit technologies from the three mentioned domains.
+  
+https://github.com/Telefonica/on-the-fly
+</details>
+
+<details>
+  <summary>Kubernetes Goat: Interactive Kubernetes Security Learning Playground</summary>
+Kubernetes Goat is a "vulnerable by design" Kubernetes Cluster environment to practice and learn about Kubernetes Security. It has step by step detailed guide and digital book on how to get started with Kubernetes Goat by exploring different vulnerabilities in Kubernetes Cluster and Containerized environments. Also, it has scenarios taken from the real-world vulnerabilities and maps the Kubernetes Goat scenarios. The complete documentation and instruction to practice Kubernetes Security for performing security assessments, pentesting, and in general Kubernetes Security. As a defender you will see how we can learn these attacks, misconfigurations to understand and improve your cloud-native infrastructure security posture.
+
+Some of the high-level scenarios include, but are not limited to
+
+1. Sensitive keys in code-bases
+2. DIND (docker-in-docker) exploitation
+3. SSRF in K8S world
+4. Container escape to access host system
+5. Docker CIS Benchmarks analysis
+6. Kubernetes CIS Benchmarks analysis
+7. Attacking private registry
+8. NodePort exposed services
+9. Helm v2 tiller to PwN the cluster
+10. Analysing crypto miner container
+11. Kubernetes Namespaces bypass
+12. Gaining environment information
+13. DoS the memory/CPU resources
+14. Hacker Container preview
+15. Hidden in layers
+16. RBAC Least Privileges Misconfiguration
+17. KubeAudit - Audit Kubernetes Clusters
+18. Sysdig Falco - Runtime Security Monitoring & Detection
+19. Popeye - A Kubernetes Cluster Sanitizer
+20. Secure network boundaries using NSP
+  
+https://github.com/madhuakula/kubernetes-goat
+</details>
+
+<details>
+  <summary>vAPI: Vulnerable Adversely Programmed Interface (OWASP API Top 10)</summary>
+vAPI is a Vulnerable Interface in a Lab like environment that mimics the scenarios from OWASP API Top 10 and helps the user understand and exploit the vulnerabilities according to OWASP API Top 10 2019. The lab is divided into 10 exercises that sequentially demonstrate the vulnerabilities and give a flag if exploited successfully.
+
+https://github.com/roottusk/vapi
+</details>
+
+## Webinars/Sessions/Talks/Labs
 
 <details>
   <summary>Disrupting OT and IoT by Exploiting TCP/IP Stacks</summary>
