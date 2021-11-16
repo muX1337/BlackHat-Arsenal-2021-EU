@@ -429,15 +429,6 @@ https://github.com/punk-security/SMBeagle
 Burp Suite is an intercepting HTTP Proxy, and it is the defacto tool for performing web application security testing. The feature of Burp Suite that I like the most is `Generate CSRF PoC`. However, the function to automatically determine the content of the request is broken, and it tries to generate PoCs using `form` even for PoCs that cannot be represented by `form`, such as JSON parameters and PUT requests. In addition, multibyte characters that can be displayed in Burp Suite itself are often garbled in the generated CSRF PoC. These were the motivations for creating LazyCSRF.
 I have implemented a feature to solve them. It has the following features:- Automatically switch to PoC using XMLHttpRequest - In case the parameter is JSON - In case the request is a PUT/PATCH/DELETE- Support displaying multibyte characters (like Japanese)- Generating CSRF PoC with Burp Suite Community Edition (of course, it also works in Professional Edition)
 https://github.com/tkmru/lazyCSRF
-
-</details>
-
-<details>
-  <summary>LazyCSRF: A More Useful CSRF PoC Generator on BurpSuite</summary>
-  
-Burp Suite is an intercepting HTTP Proxy, and it is the defacto tool for performing web application security testing. The feature of Burp Suite that I like the most is `Generate CSRF PoC`. However, the function to automatically determine the content of the request is broken, and it tries to generate PoCs using `form` even for PoCs that cannot be represented by `form`, such as JSON parameters and PUT requests. In addition, multibyte characters that can be displayed in Burp Suite itself are often garbled in the generated CSRF PoC. These were the motivations for creating LazyCSRF.
-I have implemented a feature to solve them. It has the following features:- Automatically switch to PoC using XMLHttpRequest - In case the parameter is JSON - In case the request is a PUT/PATCH/DELETE- Support displaying multibyte characters (like Japanese)- Generating CSRF PoC with Burp Suite Community Edition (of course, it also works in Professional Edition)
-https://github.com/tkmru/lazyCSRF
   
 Slides:
 https://speakerdeck.com/tkmru/lazycsrf-bh2021-europe
@@ -464,18 +455,6 @@ Adventure of Dynamic Link Library (aDLL) is a console tool for the analysis of b
 https://github.com/ideaslocas/aDLL
 
 </details>
-
-<details>
-  <summary>Scanning DNA to Detect Malicious Packages in Your Code</summary>
-  
-PackageDNA is an open-source tool, free and modular tool developed in Python3, that offers developers and researchers the ability to analyze code packages from different programming languages, in search of vulnerabilities in the code, the possible manipulations or spoofing of the package ('typosquatting'), identifying suspicious files, searching for strings in the code, among other data for analysis.
-
-PackageDNA, enables threat intelligence analysis or code audits, which allow to detect attacks to the software supply chain, the vast majority of companies integrate third-party code in their developments, thus the need to have a suite such as PackageDNA that performs the analysis of all these external codes and delivers the results of the analysis in a standardized way.
-  
-https://github.com/Telefonica/packagedna
-
-</details>
-
 
 <details>
   <summary>Scanning DNA to Detect Malicious Packages in Your Code</summary>
